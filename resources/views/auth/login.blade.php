@@ -76,15 +76,12 @@
             </div>
 
             <div class="d-flex justify-content-between align-items-center">
-                @if (Route::has('password.request'))
-                    <a class="text-muted" href="{{ route('password.request') }}">Lupa password</a>
-                @endif
-
+                <label ></label>
                 <button type="submit" class="btn btn-primary">Login</button>
             </div>
         </form>
 
-        <div class="text-center" style="margin-top: 50px;">
+        <div class="text-center" style="margin-top: 25px;">
             <p class="text-muted mb-0">Don't have account?</p>
             <a href="{{ route('register') }}">Register</a>
         </div>
