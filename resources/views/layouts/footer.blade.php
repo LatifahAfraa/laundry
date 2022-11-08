@@ -1,37 +1,35 @@
-
-
-  <footer class="footer bg-white" style="position: fixed; bottom:0;width:100%;border-top: black solid 1px;">
+<footer class="footer bg-white" style="position: fixed; bottom:0; z-index:101;">
 
     <div class="row">
-      <div class="col align-bottom mx-auto d-block">
-        <div class="card  border-0">
-          <a  href="" class="text-center">
-            <span data-feather="home"></span>
-            <p href="" >Home</p>
-          </a>
+        <div class="col align-bottom mx-auto d-block">
+            <div class="card  border-0">
+                <a href="" class="text-center">
+                    <span data-feather="home"></span>
+                    <p href="">Home</p>
+                </a>
+            </div>
         </div>
-      </div>
 
-      <div class="col align-bottom mx-auto d-block">
-        <div class="card  border-0">
-            <a  href="" class="text-center">
-            <span data-feather="shopping-cart" href="#"></span>
-            <p href="">Cart</p>
-            </a>
+        <div class="col align-bottom mx-auto d-block">
+            <div class="card  border-0">
+                <a href="" class="text-center">
+                    <span data-feather="shopping-cart" href="#"></span>
+                    <p href="">Cart</p>
+                </a>
+            </div>
         </div>
-      </div>
 
-      <div class="col align-bottom mx-auto d-block">
-        <div class="card  border-0">
-            <a  href="" class="text-center">
-            <span data-feather="user" href="#"></span>
-             <p href="">Account</p>
-          </center>
+        <div class="col align-bottom mx-auto d-block">
+            <div class="card  border-0">
+                <a href="" class="text-center">
+                    <span data-feather="user" href="#"></span>
+                    <p href="">Account</p>
+                    </center>
+            </div>
         </div>
-      </div>
 
 
     </div>
 
 
-  </footer>
+</footer>
