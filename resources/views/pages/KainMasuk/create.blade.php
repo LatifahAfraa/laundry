@@ -24,7 +24,7 @@
                         </script>
                         @endif
 
-                        <form action="" method="POST">
+                        <form action="{{ route('KainMasuk.store') }}" method="POST">
                             @csrf
                             <div class="form-group row mb-1">
                                 <label for="nama" class="col-sm-2 col-form-label">Nama Pelanggan</label>
@@ -53,16 +53,21 @@
                             </div>
 
                             <div class="form-group row mb-1">
-                                <label for="satuan" class="col-sm-2 col-form-label">Satuan</label>
+                                <label for="harga" class="col-sm-2 col-form-label">Harga</label>
                                 <div class="col-sm-10">
-                                    <textarea name="alamat" rows="4" cols="50" class="form-control"></textarea>
+                                    <select name="harga" class="form-control">
+                                        <option value="">===PILIH HARGA===</option>
+                                            <option value="6000">Cuci Komplit</option>
+                                            <option value="4000">Cuci Kering</option>
+                                            <option value="4000">Setrika</option>
+                                        </select>
                                 </div>
                             </div>
 
                             <div class="form-group row mb-1">
-                                <label for="jumlah" class="col-sm-2 col-form-label">Jumlah</label>
+                                <label for="satuan" class="col-sm-2 col-form-label">Satuan</label>
                                 <div class="col-sm-10">
-                                    <input type="number" name="jumlah"  class="form-control" >
+                                    <textarea name="satuan" rows="4" cols="50" class="form-control"></textarea>
                                 </div>
                             </div>
 

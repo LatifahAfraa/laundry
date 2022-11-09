@@ -14,7 +14,6 @@
                     <th>Berat</th>
                     <th>Harga</th>
                     <th>Satuan</th>
-                    <th>Jumlah</th>
                     <th>Harga Satuan</th>
                     <th>Total Harga</th>
                     <th>Aksi</th>
@@ -23,17 +22,22 @@
                 <tbody>
                     @php
                         $no=1;
+                        $total=0;
                     @endphp
-                    <td>{{ $no++ }}.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    @foreach ($masuk as $item)
+                        <tr>
+
+                            <td>{{ $no++ }}.</td>
+                            <td>{{ $item->nama ?? ""}}</td>
+                            <td>{{ $item->jenis ?? ""}}</td>
+                            <td>{{ $item->berat ?? ""}} Kg</td>
+                            <td>Rp. {{ $item->harga ?? ""}}</td>
+                            <td>{{ $item->satuan ?? "-"}}</td>
+                            <td>Rp. {{ $item->hargas ?? "0"}}</td>
+                            <td>Rp. {{ $total=(($item->harga*$item->berat)+$item->hargas)}}</td>
+                            <td></td>
+                        </tr>
+                    @endforeach
                 </tbody>
               </table>
     </div>

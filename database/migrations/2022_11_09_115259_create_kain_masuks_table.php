@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('kain_masuks', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('jenis');
+            $table->integer('berat');
+            $table->string('harga');
+            $table->string('satuan')->nullable();
+            $table->string('hargas')->nullable();
             $table->timestamps();
         });
     }
