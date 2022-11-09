@@ -3,18 +3,18 @@
     <div class="row">
         <div class="col align-bottom mx-auto d-block">
             <div class="card  border-0">
-                <a href="" class="text-center">
-                    <span data-feather="home"></span>
-                    <p href="">Home</p>
+                <a href="{{ route('dashboard') }}" class="text-center">
+                    <span class="fa fa-home"></span>
+                    <p>Home</p>
                 </a>
             </div>
         </div>
 
         <div class="col align-bottom mx-auto d-block">
             <div class="card  border-0">
-                <a href="" class="text-center">
-                    <span data-feather="shopping-cart" href="#"></span>
-                    <p href="">Cart</p>
+                <a href="{{ route('KainMasuk.index') }}" class="text-center">
+                    <span class="fa fa-shirt"></span>
+                    <p >Kain Masuk</p>
                 </a>
             </div>
         </div>
